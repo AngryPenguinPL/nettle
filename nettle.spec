@@ -17,7 +17,7 @@ Summary:	Nettle cryptographic library
 Name:		nettle
 Epoch:		1
 Version:	3.4.1
-Release:	5
+Release:	6
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.lysator.liu.se/~nisse/nettle/
@@ -107,9 +107,6 @@ CFLAGS="%optflags -fno-integrated-as"
 %configure \
 	--enable-static \
 	--disable-openssl \
-%ifarch %{x86_64}
-	--enable-x86-aesni \
-%endif
 	--enable-shared
 
 %make_build
