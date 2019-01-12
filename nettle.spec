@@ -114,8 +114,6 @@ CFLAGS="%optflags -fno-integrated-as"
 
 %make_build
 
-%check
-%make check
 
 %install
 %make_install
